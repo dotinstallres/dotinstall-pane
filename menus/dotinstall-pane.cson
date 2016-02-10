@@ -1,0 +1,30 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'ドットインストールの表示/非表示'
+      'command': 'dotinstall-pane:toggle'
+    },
+    {
+      'label': 'ドットインストールで検索'
+      'command': 'dotinstall-pane:search'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Dotinstall Viewer'
+      'submenu': [
+        {
+          'label': '表示/非表示'
+          'command': 'dotinstall-pane:toggle'
+        },
+        {
+          'label': '検索'
+          'command': 'dotinstall-pane:search'
+        }
+      ]
+    ]
+  }
+]

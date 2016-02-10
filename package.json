@@ -1,0 +1,26 @@
+{
+  "name": "dotinstall-pane",
+  "main": "./lib/dotinstall-pane",
+  "version": "0.1.0",
+  "description": "A package for watching Dotinstall in Atom.",
+  "keywords": [
+    "dotinstall",
+    "programming",
+    "tutorial",
+    "education"
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "dotinstall-pane:toggle",
+      "dotinstall-pane:search"
+    ]
+  },
+  "repository": "https://github.com/dotinstallres/dotinstall-pane",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "jquery": "2.2.0"
+  }
+}
