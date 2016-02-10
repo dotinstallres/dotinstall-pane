@@ -21,7 +21,7 @@ _Dotinstall Pane_ is a package for Atom, which shows [Dotinstall](http://dotinst
 
 ### Search with context menu
 
-![Screenshot](https://github.com/fkoji/dotinstall-pane-dev/blob/master/screenshot-demo.gif?raw=true)
+![Screenshot](https://github.com/fkoji/dotinstall-pane-dev/blob/master/screenshot-search.png?raw=true)
 
 * You can search for the selected text in Dotinstall by choosing "ドットインストールで検索" in the context menu.
 
