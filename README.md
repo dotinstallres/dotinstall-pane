@@ -8,7 +8,10 @@ _Dotinstall Pane_ is a package for Atom, which shows [Dotinstall](http://dotinst
 
 ## Usage
 
-### Ctrl + Shift + D to show/hide the Dotinstall Pane
+### Option (Alt) + Shift + D to show/hide the Dotinstall Pane
+
+* Mac: Option + Shift + D
+* Windows: Alt + Shift + D
 
 ![Screenshot](https://github.com/fkoji/dotinstall-pane-dev/blob/master/screenshot-mail.png?raw=true)
 
