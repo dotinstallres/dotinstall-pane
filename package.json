@@ -1,7 +1,7 @@
 {
   "name": "dotinstall-pane",
   "main": "./lib/dotinstall-pane",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "A package for watching Dotinstall in Atom.",
   "keywords": [
     "dotinstall",
