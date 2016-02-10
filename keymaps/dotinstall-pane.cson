@@ -10,4 +10,4 @@
 'atom-workspace':
   'ctrl-shift-d': 'dotinstall-pane:toggle'
   'cmd-shift-ctrl-r': 'dotinstall-pane:reload'
-  'ctrl-shift-enter': 'dotinstall-pane:play'
+  'alt-shift-enter': 'dotinstall-pane:play'

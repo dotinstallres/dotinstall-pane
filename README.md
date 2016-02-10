@@ -15,9 +15,12 @@ _Dotinstall Pane_ is a package for Atom, which shows [Dotinstall](http://dotinst
 * The pane is resizable.
 * Context menu (right-click menu) is also available to show/hide the Dotinstall Pane.
 
-### Ctrl + Shift + Enter to play/pause the Dotinstall video
+### Option (Alt) + Shift + Enter to play/pause the Dotinstall video
 
-* You can controll the Dotinstall video player with "Ctrl + Shift + Enter" key.
+You can controll the Dotinstall video player with key bind.
+
+* Mac: Option + Shift + Enter
+* Windows: Alt + Shift + Enter
 
 ### Search with context menu
 
