@@ -13,7 +13,7 @@ _Dotinstall Pane_ is a package for Atom, which shows [Dotinstall](http://dotinst
 * Mac: Option + Shift + D
 * Windows: Alt + Shift + D
 
-![Screenshot](https://github.com/fkoji/dotinstall-pane-dev/blob/master/screenshot-mail.png?raw=true)
+![Screenshot](http://static.dotinstall.com/atom_package/screenshot-mail.png)
 
 * The pane is resizable.
 * Context menu (right-click menu) is also available to show/hide the Dotinstall Pane.
@@ -27,13 +27,13 @@ You can controll the Dotinstall video player with key bind.
 
 ### Search with context menu
 
-![Screenshot](https://github.com/fkoji/dotinstall-pane-dev/blob/master/screenshot-search.png?raw=true)
+![Screenshot](http://static.dotinstall.com/atom_package/screenshot-search.png)
 
 * You can search for the selected text in Dotinstall by choosing "ドットインストールで検索" in the context menu.
 
 ## Demo
 
-![Screenshot](https://github.com/fkoji/dotinstall-pane-dev/blob/master/screenshot-demo.gif?raw=true)
+![Screenshot](http://static.dotinstall.com/atom_package/screenshot-demo.gif)
 
 # Installation
 
