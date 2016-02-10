@@ -1,4 +1,5 @@
 window.$ = window.jQuery = require('../node_modules/jquery')
+shell = require('shell')
 
 DotinstallNavigationView = require './dotinstall-navigation-view.coffee'
 
@@ -14,6 +15,12 @@ class DotinstallPaneView
     @webview  = document.createElement('webview')
 
     @webview.setAttribute('useragent', DotinstallPaneView.USER_AGENT)
+
+    @webview.addEventListener 'new-window', (e) =>
+      if /^https?:\/\/dotinstall\.com\//.test e.url
+        @webview.src = e.url
+      else
+        shell.openExternal(e.url)
 
     $element = $(@element).addClass('dotinstall-pane')
 
