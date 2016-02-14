@@ -8,13 +8,17 @@
     {
       'label': 'ドットインストールで検索'
       'command': 'dotinstall-pane:search'
+    },
+    {
+      'label': 'ドットインストールの再生/一時停止'
+      'command': 'dotinstall-pane:play'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Dotinstall Viewer'
+      'label': 'Dotinstall Pane'
       'submenu': [
         {
           'label': '表示/非表示'
@@ -23,6 +27,10 @@
         {
           'label': '検索'
           'command': 'dotinstall-pane:search'
+        },
+        {
+          'label': '再生/一時停止',
+          'command': 'dotinstall-pane:play'
         }
       ]
     ]

@@ -4,7 +4,7 @@ _Dotinstall Pane_ is a package for Atom, which shows [Dotinstall](http://dotinst
 
 ## Current version
 
-0.1.0
+0.1.1
 
 ## Usage
 
@@ -13,7 +13,7 @@ _Dotinstall Pane_ is a package for Atom, which shows [Dotinstall](http://dotinst
 * Mac: Option + Shift + D
 * Windows: Alt + Shift + D
 
-![Screenshot](http://static.dotinstall.com/atom_package/screenshot-mail.png)
+![Screenshot](http://static.dotinstall.com/atom_package/screenshot-main.png)
 
 * The pane is resizable.
 * Context menu (right-click menu) is also available to show/hide the Dotinstall Pane.

@@ -1,2 +1,6 @@
+## 0.1.1
+* Rename the label in Packages menu #1
+* Add play command to menus
+
 ## 0.1.0 - First Release
 * Basic feature added
