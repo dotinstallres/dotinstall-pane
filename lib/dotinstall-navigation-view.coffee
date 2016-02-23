@@ -17,19 +17,19 @@ class DotinstallNavigationView
 
   createBackButton: ->
     @createButton()
-      .text '戻る'
+      .append('<i class="fa fa-chevron-left">')
       .on 'click', =>
         @goBack()
 
   createForwardButton: ->
     @createButton()
-      .text('進む')
+      .append('<i class="fa fa-chevron-right">')
       .on 'click', =>
         @goForward()
 
   createReloadButton: ->
     @createButton()
-      .text('更新')
+      .append('<i class="fa fa-refresh">')
       .on 'click', =>
         @reload()
 
@@ -54,3 +54,9 @@ class DotinstallNavigationView
 
   reload: ->
     @webview.executeJavaScript 'location.reload()'
+
+  startLoading: =>
+    @reloadButton.find('i').addClass('fa-spin')
+
+  stopLoading: =>
+    @reloadButton.find('i').removeClass('fa-spin')

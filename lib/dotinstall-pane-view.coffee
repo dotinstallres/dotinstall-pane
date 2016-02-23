@@ -22,25 +22,29 @@ class DotinstallPaneView
       else
         shell.openExternal(e.url)
 
+    @webview.addEventListener 'did-start-loading', =>
+      @startLoading()
+
+    @webview.addEventListener 'did-stop-loading', =>
+      @stopLoading()
+
     $element = $(@element).addClass('dotinstall-pane')
 
     $main = $('<div>')
       .attr('id', 'dotinstall_pane_main')
       .appendTo($element)
 
-    navigation = new DotinstallNavigationView(@webview)
+    @navigation = new DotinstallNavigationView(@webview)
 
-    $main.append(navigation.getElement())
+    $main.append(@navigation.getElement())
 
     if serializedState? and serializedState.pane_width?
       @paneWidth = serializedState.pane_width
     else
       @paneWidth = DotinstallPaneView.DEFAULT_PANE_WIDTH
 
-    #console.log('Loaded width:', @paneWidth)
     $('.dotinstall-pane').width(@paneWidth)
 
-    #console.log('main width', @paneWidth - DotinstallPaneView.HANDLE_WIDTH)
     $main.width(@paneWidth - DotinstallPaneView.HANDLE_WIDTH)
 
     url = 'http://dotinstall.com'
@@ -57,6 +61,10 @@ class DotinstallPaneView
     $resizeHandle = $('<div>')
       .attr('id', 'dotinstall_resize_handle')
       .on('mousedown', @resizeDotinstallStarted)
+      .appendTo($element)
+
+    @loadingBar = $('<div>')
+      .attr('id', 'dotinstall_loading_bar')
       .appendTo($element)
 
     $(document).on('mousemove', @resizeDotinstallPane)
@@ -81,7 +89,6 @@ class DotinstallPaneView
 
   resizeDotinstallStarted: =>
     @resizing = true
-    #console.log(@paneWidth)
 
   resizeDotinstallPane: ({pageX, which}) =>
     return unless @resizing and which is 1
@@ -100,4 +107,13 @@ class DotinstallPaneView
     return unless @resizing
 
     @resizing = false
-    # console.log('Stopped? paneWidth:', @paneWidth)
+
+  startLoading: =>
+    @navigation.startLoading()
+    width = 40 + Math.floor Math.random() * 20
+    @loadingBar.show().animate width: "#{width}%", 550
+
+  stopLoading: =>
+    @navigation.stopLoading()
+    @loadingBar.animate width: '100%', 180, =>
+      @loadingBar.hide().width(0)
