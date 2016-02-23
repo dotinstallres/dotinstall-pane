@@ -1,3 +1,7 @@
+## 0.1.2
+* Add a progress bar
+* Use font awesome
+
 ## 0.1.1
 * Rename the label in Packages menu #1
 * Add play command to menus
