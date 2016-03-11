@@ -65,7 +65,7 @@ class DotinstallPaneView
 
     @loadingBar = $('<div>')
       .attr('id', 'dotinstall_loading_bar')
-      .appendTo($element)
+      .appendTo($main)
 
     $(document).on('mousemove', @resizeDotinstallPane)
     $(document).on('mouseup', @resizeDotinstallStopped)

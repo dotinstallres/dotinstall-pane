@@ -2,7 +2,7 @@
   "name": "dotinstall-pane",
   "main": "./lib/dotinstall-pane",
   "version": "0.1.2",
-  "description": "A package for watching Dotinstall in Atom.",
+  "description": "Dotinstall Pane is a package for Atom, which shows Dotinstall site on the left side pane.",
   "keywords": [
     "dotinstall",
     "programming",
