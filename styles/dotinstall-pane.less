@@ -38,52 +38,46 @@ button {
 }
 
 .dotinstall-pane {
+    display: flex;
     min-width: 510px;
     height: 100%;
-    overflow: hidden;
 
-    #dotinstall_loading_bar {
-        position: absolute;
-        top: 0;
-        height: 2px;
-        background: rgba(243, 152, 0, 0.8);
-    }
-}
+    #dotinstall_pane_main {
+        display: flex;
+        flex-direction: column;
 
-#dotinstall_pane_main {
-    float: left;
-    min-width: 502px;
-    height: 100%;
-    overflow: hidden;
-
-    .dotinstall-navigation {
-        position: absolute;
-        bottom: 0;
-        background: #eee;
-        padding: 8px;
-        border-bottom: 2px solid #ccc;
-        opacity: 0.9;
-        transition: opacity .5s;
-
-        &:hover {
-            opacity: 1.0;
-        }
-
-        button + button {
-            margin-left: 4px;
-        }
-    }
-
-    #dotinstall_view {
         min-width: 502px;
         height: 100%;
-        *overflow: hidden;
-    }
-}
+        position: relative;
 
-#dotinstall_resize_handle {
-    float: left;
-    width: 8px;
-    height: 100%;
-    cursor: col-resize;
+        .dotinstall-navigation {
+            flex: 1 0 auto;
+            background: #eee;
+            padding: 8px;
+            border-bottom: 2px solid #ccc;
+
+            button + button {
+                margin-left: 4px;
+            }
+        }
+
+        #dotinstall_view {
+            flex: 0 0 auto;
+            min-width: 502px;
+            height: 100%;
+        }
+
+        #dotinstall_loading_bar {
+            position: absolute;
+            top: 0;
+            height: 2px;
+            background: rgba(243, 152, 0, 0.8);
+        }
+    }
+
+    #dotinstall_resize_handle {
+        width: 8px;
+        height: 100%;
+        cursor: col-resize;
+    }
 }

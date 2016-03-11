@@ -4,7 +4,7 @@ _Dotinstall Pane_ is a package for Atom, which shows [Dotinstall](http://dotinst
 
 ## Current version
 
-0.1.1
+0.1.3
 
 ## Usage
 

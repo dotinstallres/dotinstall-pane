@@ -2,6 +2,9 @@
 'context-menu':
   'atom-text-editor': [
     {
+      'type': 'separator'
+    },
+    {
       'label': 'ドットインストールの表示/非表示'
       'command': 'dotinstall-pane:toggle'
     },
@@ -12,7 +15,10 @@
     {
       'label': 'ドットインストールの再生/一時停止'
       'command': 'dotinstall-pane:play'
-    }
+    },
+    {
+      'type': 'separator'
+    },
   ]
 'menu': [
   {
