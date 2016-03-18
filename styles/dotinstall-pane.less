@@ -27,6 +27,36 @@ button {
     color: #333333;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 
+    &.help-button {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 28px;
+        height: 28px;
+        padding: 4px;
+        border-radius: 50%;
+        font-size: 12px;
+        text-align: center;
+        color: #444;
+    }
+
+    &.disabled {
+        background-image: none;
+        background: #e6e6e6;
+        color: #bbbbbb;
+    }
+
+    &.disabled:hover {
+        background-image: none;
+        background: #e6e6e6;
+        color: #bbbbbb;
+    }
+
+    &.disabled.pushed {
+        background-image: none;
+        background: #e6e6e6;
+        color: #bbbbbb;
+    }
+
     &:hover {
         background-image: linear-gradient(to bottom, #ffffff, #d6d6d6);
     }
@@ -35,12 +65,17 @@ button {
         background-image: linear-gradient(to bottom, #e6e6e6, #f0f0f0);
         text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.75);
     }
+
+    &.pull-right {
+        float: right;
+    }
 }
 
 .dotinstall-pane {
     display: flex;
     min-width: 510px;
     height: 100%;
+    position: relative;
 
     #dotinstall_pane_main {
         display: flex;
@@ -79,5 +114,56 @@ button {
         width: 8px;
         height: 100%;
         cursor: col-resize;
+    }
+
+    #dotinstall_pane_help {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+
+        .help-body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 75%;
+            height: 75%;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 24px;
+            border-radius: 6px;
+
+            .close-help {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                cursor: pointer;
+            }
+
+            dt {
+                display: inline-block;
+                color: #ccc;
+                font-size: 24px;
+                margin-bottom: 8px;
+                padding-bottom: 4px;
+                border-bottom: 1px solid #333;
+            }
+
+            dd {
+                font-size: 18px;
+                color: #cc3;
+                margin-left: 1em;
+                margin-bottom: 16px;
+            }
+
+            .more-info a {
+                text-decoration: underline;
+            }
+        }
     }
 }

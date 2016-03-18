@@ -26,6 +26,8 @@ class DotinstallPaneView
       @startLoading()
 
     @webview.addEventListener 'did-stop-loading', =>
+      @navigation.setCanGoBack @webview.canGoBack()
+      @navigation.setCanGoForward @webview.canGoForward()
       @stopLoading()
 
     $element = $(@element).addClass('dotinstall-pane')
@@ -34,7 +36,15 @@ class DotinstallPaneView
       .attr('id', 'dotinstall_pane_main')
       .appendTo($element)
 
-    @navigation = new DotinstallNavigationView(@webview)
+    $help = $('<div>')
+      .attr('id', 'dotinstall_pane_help')
+      .append(
+        $('<div class="help-body">').html(@helpHtml())
+      ).on(
+        'click', -> $(@).fadeOut()
+      ).appendTo($element)
+
+    @navigation = new DotinstallNavigationView(@webview, $help)
 
     $main.append(@navigation.getElement())
 
@@ -117,3 +127,17 @@ class DotinstallPaneView
     @navigation.stopLoading()
     @loadingBar.animate width: '100%', 180, =>
       @loadingBar.hide().width(0)
+
+  helpHtml: ->
+    [
+      '<div class="close-help"><i class="fa fa-times fa-2x"></i></div>',
+      '<dl>',
+      '<dt>Open/Close</dt>',
+      '<dd>Alt (Option) + Shift + D</dd>',
+      '<dt>Play/Pause</dt>',
+      '<dd>Alt (Option) + Shift + Enter</dd>',
+      '</dl>',
+      '<p class="more-info">',
+      '<a href="https://atom.io/packages/dotinstall-pane" target="_blank">https://atom.io/packages/dotinstall-pane</a>',
+      '</p>'
+    ].join('')
