@@ -69,6 +69,7 @@ class DotinstallPaneView
 
     $(document).on('mousemove', @resizeDotinstallPane)
     $(document).on('mouseup', @resizeDotinstallStopped)
+    $(window).on('resize', @fitHeight)
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
@@ -107,6 +108,9 @@ class DotinstallPaneView
     return unless @resizing
 
     @resizing = false
+
+  fitHeight: =>
+    $(@webview).height($('.dotinstall-pane').height())
 
   startLoading: =>
     @navigation.startLoading()
