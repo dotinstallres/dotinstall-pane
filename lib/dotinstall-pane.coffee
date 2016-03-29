@@ -39,6 +39,7 @@ module.exports = DotinstallPane =
       @leftPanel.hide()
     else
       @leftPanel.show()
+      @dotinstallPaneView.fitHeight()
 
   reload: ->
     @dotinstallPaneView.reload()

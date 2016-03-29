@@ -1,3 +1,6 @@
+## 0.1.4
+* Fixed pane height bug for Atom 1.6
+
 ## 0.1.3
 * Move navigation to the top of pane
 
