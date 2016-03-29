@@ -1,3 +1,7 @@
+## 0.1.5
+* Add help button
+* Disable back/forward button if you can not go back/forward.
+
 ## 0.1.4
 * Fixed pane height bug for Atom 1.6
 
