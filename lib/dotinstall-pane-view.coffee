@@ -7,7 +7,7 @@ module.exports =
 class DotinstallPaneView
   @HANDLE_WIDTH       = 8
   @DEFAULT_PANE_WIDTH = 640
-  @USER_AGENT         = 'DotinstallAtomPane/1.0'
+  @USER_AGENT         = 'DotinstallAtomPane/1.0.1'
 
   constructor: (serializedState) ->
     @resizing = false
@@ -17,7 +17,7 @@ class DotinstallPaneView
     @webview.setAttribute('useragent', DotinstallPaneView.USER_AGENT)
 
     @webview.addEventListener 'new-window', (e) =>
-      if /^https?:\/\/dotinstall\.com\//.test e.url
+      if /^https?:\/\/dotinstall\.com\/(?!q\/new)/.test e.url
         @webview.src = e.url
       else
         shell.openExternal(e.url)

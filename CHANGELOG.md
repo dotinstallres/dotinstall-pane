@@ -1,3 +1,6 @@
+## 0.1.6
+* Update URL pattern for opening in new window
+
 ## 0.1.5
 * Add help button
 * Disable back/forward button if you can not go back/forward.
