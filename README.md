@@ -4,7 +4,7 @@ _Dotinstall Pane_ is a package for Atom, which shows [Dotinstall](http://dotinst
 
 ## Current version
 
-0.1.6
+0.1.7
 
 ## Usage
 
@@ -24,6 +24,20 @@ You can controll the Dotinstall video player with key bind.
 
 * Mac: Option + Shift + Enter
 * Windows: Alt + Shift + Enter
+
+### Option (Alt) + Shift + [ / ] to rewind/forward the Dotinstall video by 5 sec
+
+You can rewind and forward the Dotinstall video with key bind.
+
+#### Rewind
+
+* Mac: Option + Shift + [
+* Windows: Alt + Shift + [
+
+#### Forward
+
+* Mac: Option + Shift + ]
+* Windows: Alt + Shift + ]
 
 ### Search with context menu
 

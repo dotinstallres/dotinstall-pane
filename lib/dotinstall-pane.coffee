@@ -24,6 +24,8 @@ module.exports = DotinstallPane =
       'dotinstall-pane:reload': => @reload()
       'dotinstall-pane:search': => @search()
       'dotinstall-pane:play': => @play()
+      'dotinstall-pane:forwardTo': => @forwardTo()
+      'dotinstall-pane:rewindTo': => @rewindTo()
     }
 
   deactivate: ->
@@ -57,3 +59,9 @@ module.exports = DotinstallPane =
 
   play: ->
     @dotinstallPaneView.webview.executeJavaScript 'Dotinstall.videoController.playOrPause()'
+
+  forwardTo: ->
+    @dotinstallPaneView.webview.executeJavaScript 'Dotinstall.videoController.forwardTo(5)'
+
+  rewindTo: ->
+    @dotinstallPaneView.webview.executeJavaScript 'Dotinstall.videoController.rewindTo(5)'

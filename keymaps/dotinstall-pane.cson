@@ -11,3 +11,5 @@
   'alt-shift-d': 'dotinstall-pane:toggle'
   'cmd-shift-ctrl-r': 'dotinstall-pane:reload'
   'alt-shift-enter': 'dotinstall-pane:play'
+  'alt-{': 'dotinstall-pane:rewindTo'
+  'alt-}': 'dotinstall-pane:forwardTo'

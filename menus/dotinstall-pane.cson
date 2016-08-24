@@ -37,6 +37,14 @@
         {
           'label': '再生/一時停止',
           'command': 'dotinstall-pane:play'
+        },
+        {
+          'label': '5秒進む',
+          'command': 'dotinstall-pane:forwardTo'
+        },
+        {
+          'label': '5秒戻る',
+          'command': 'dotinstall-pane:rewindTo'
         }
       ]
     ]
