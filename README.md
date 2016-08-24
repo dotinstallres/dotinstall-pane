@@ -25,16 +25,12 @@ You can controll the Dotinstall video player with key bind.
 * Mac: Option + Shift + Enter
 * Windows: Alt + Shift + Enter
 
-### Option (Alt) + Shift + [ / ] to rewind/forward the Dotinstall video by 5 sec
-
-You can rewind and forward the Dotinstall video with key bind.
-
-#### Rewind
+### Option (Alt) + Shift + [ to rewind 5 sec
 
 * Mac: Option + Shift + [
 * Windows: Alt + Shift + [
 
-#### Forward
+### Option (Alt) + Shift + ] to forward 5 sec
 
 * Mac: Option + Shift + ]
 * Windows: Alt + Shift + ]
