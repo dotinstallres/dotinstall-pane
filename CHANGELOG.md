@@ -1,3 +1,6 @@
+## 0.1.7
+* Add key bindings to rewind and forward video
+
 ## 0.1.6
 * Update URL pattern for opening in new window
 
