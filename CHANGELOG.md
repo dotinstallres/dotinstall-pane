@@ -1,3 +1,6 @@
+## 0.1.8
+* Update URL pattern for opening in an external browser
+
 ## 0.1.7
 * Add key bindings to rewind and forward video
 
