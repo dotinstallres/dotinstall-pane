@@ -1,3 +1,6 @@
+## 0.1.9
+* Update user agent string
+
 ## 0.1.8
 * Update URL pattern for opening in an external browser
 

@@ -7,14 +7,14 @@ module.exports =
 class DotinstallPaneView
   @HANDLE_WIDTH       = 8
   @DEFAULT_PANE_WIDTH = 640
-  @USER_AGENT         = 'DotinstallAtomPane/1.0.2'
+  @USER_AGENT         = 'DotinstallAtomPane/1.0.3'
 
   constructor: (serializedState) ->
     @resizing = false
     @element  = document.createElement('div')
     @webview  = document.createElement('webview')
 
-    @webview.setAttribute('useragent', DotinstallPaneView.USER_AGENT)
+    @webview.setAttribute('useragent', window.navigator.userAgent + ' ' + DotinstallPaneView.USER_AGENT)
 
     # @webview.addEventListener 'dom-ready', =>
     #   @webview.openDevTools()
