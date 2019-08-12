@@ -11,12 +11,14 @@ class DotinstallNavigationView
     @backButton    = @createBackButton()
     @forwardButton = @createForwardButton()
     @reloadButton  = @createReloadButton()
+    @homeButton    = @createHomeButton()
     @helpButton    = @createHelpButton()
 
     @element
       .append(@backButton)
       .append(@forwardButton)
       .append(@reloadButton)
+      .append(@homeButton)
       .append(@helpButton)
 
   createBackButton: ->
@@ -38,6 +40,12 @@ class DotinstallNavigationView
       .append('<i class="fa fa-refresh">')
       .on 'click', =>
         @reload()
+
+  createHomeButton: ->
+    @createButton()
+      .append('<i class="fa fa-home">')
+      .on 'click', =>
+        @home()
 
   createHelpButton: ->
     @createButton()
@@ -68,6 +76,9 @@ class DotinstallNavigationView
 
   reload: ->
     @webview.executeJavaScript 'location.reload()'
+
+  home: ->
+    @webview.src = 'https://dotinstall.com'
 
   openHelp: =>
     @help.fadeIn()

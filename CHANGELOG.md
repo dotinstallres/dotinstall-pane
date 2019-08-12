@@ -1,3 +1,6 @@
+## 0.2.0
+* Add home button
+
 ## 0.1.9
 * Update user agent string
 
