@@ -72,8 +72,6 @@ button {
 }
 
 .dotinstall-pane {
-    display: flex;
-    min-width: 510px;
     height: 100%;
     position: relative;
 
@@ -81,7 +79,6 @@ button {
         display: flex;
         flex-direction: column;
 
-        min-width: 502px;
         height: 100%;
         position: relative;
 
@@ -98,7 +95,6 @@ button {
 
         #dotinstall_view {
             flex: 0 0 auto;
-            min-width: 502px;
             height: 100%;
         }
 
@@ -124,6 +120,10 @@ button {
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
+
+        &.fade {
+          display: block;
+        }
 
         .help-body {
             position: absolute;
